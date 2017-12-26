@@ -1,0 +1,45 @@
+/*设置通用样式*/
+
+body{
+    font-family: "PingFang SC", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+    color:#222;
+    font-size: 62.5%;
+    margin:0;
+    padding:0;
+    background-color:transparent;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+a{
+    text-decoration:none;
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: none;
+
+}
+
+img{
+    vertical-align:middle;
+}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.lf { float:left;}
+.rt { float:right;}
+section.main{
+    margin-top: 20px;
+}
+#header.header_fix{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+

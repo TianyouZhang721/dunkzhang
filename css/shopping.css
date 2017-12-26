@@ -1,0 +1,354 @@
+.clearfix:after{
+	clear: both;
+    content: '';
+    display: table;
+}
+#product_index{
+	height: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 30px;
+    width: 1200px;
+}
+/* 搜索 */
+#product_index>.search{
+	width: 620px;
+	margin: 30px auto;
+	text-align: left;
+}
+#product_index>.search>.search_box{
+	height: 45px;
+    background-color: #fff;
+    position: relative;
+    border: 1px solid #ECECEC;
+}
+/* 搜索框 */
+#search_input{
+	width: 70%;
+	font-size: 1.2rem;
+	color: #929292;
+	outline: none;
+	padding: 14px 10px;
+	border: none;
+	float: left;
+}
+#shelper{
+    left: 320px;
+    width: 400px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    left: -1px;
+    top: 36px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.2);
+    list-style-type: disc;
+    display:none;
+}
+#shelper>li{
+    overflow: hidden;
+    padding: 1px 6px;
+    line-height: 24px;
+    cursor: pointer;
+}
+#shelper>li:hover,#shelper>li.hover{
+    background: #f5f5f5;
+}
+#shelper>li.focus{ background: lightBlue }
+#shelper .search-item{
+    color: #005AA0;
+    float: left;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* 搜索按钮 */
+.btn_search{
+	width: 100px;
+    height: 45px;
+    margin-top: -1px;
+    float: right;
+    background: url("../img/icon/search_btn.png") #00aaea no-repeat center ;
+    background-size: 18px;
+}
+/* 搜索标签 */
+.search_tips{
+	margin-top: 5px;
+    font-size: 1.2rem;
+}
+.search_tips>a{
+	color: #929292;
+	margin-right: 20px;
+}
+/* banner */
+.banner>.banner_fl{
+	width: 900px;
+	height: 420px;
+	float: left;
+	position: relative;
+}
+.banner>.banner_fl>.menu{
+	width: 170px;
+    height: 100%;
+    background-color: rgba(7,17,27,0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.menu_tabs>.item{
+	height: 70px;
+	    line-height: 70px;
+	    font-size: 1.4rem;
+	    text-align: center;
+}
+.menu_tabs>.item>a{
+	display: block;
+	color: #fff;
+}
+.menu_tabs>.item>a>img{
+	width: 16px;
+	margin-right: 10px;
+}
+
+.banner_fl>.submenu{
+	position: absolute;
+    left: 170px;
+    top: 0;
+    z-index: 2;
+}
+.submenu>section{
+	width: 470px;
+	height: 420px;
+	background-color: #fff;
+	display: none;
+}
+.submenu_title{
+	font-size: 1.5rem;
+	    color: #00AAEA;
+	    height: 40px;
+	    line-height: 40px;
+	    padding-left: 30px;
+}
+
+/* 隐藏导航 */
+.submenu_list>ul>li{
+	float: left;
+	margin-left: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 80px;
+	height: 100px;
+	text-align: center;
+}
+.submenu_list>ul>li>a{
+	display: block;
+	    width: 100%;
+	    height: 100%;
+}
+.submenu_list>ul>li>a>img{
+	width: 60px;
+	height: 60px;
+	display: block;
+	margin: 0 auto;
+}
+.submenu_list>ul>li>a>span{
+	font-size: 1.2rem;
+	    color: #393B3D;
+	    padding-top: 10px;
+	    display: block;
+}
+
+/* 轮播图 */
+#slide_carousel{
+	width: 900px;
+	height: 420px;
+	overflow: hidden;
+	position: relative;
+	opacity: 1;
+}
+.carousel_outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.carousel_wrapper{
+	width: 1800px;
+	left: 0px;
+	display: block;
+	transition: all 1000ms ease;
+	transform: translate3d(0px, 0px, 0px);
+}
+.carousel_item{
+	float: left;
+	width: 900px;
+}
+.carousel_item>a{
+	display: block;
+}
+.carousel_item>a>img{
+	display: block;
+	height: 420px;
+}
+
+/* 轮播控制 */
+.carousel_control{
+	margin-top: 10px;
+	text-align: center;
+}
+.pagination{
+	position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.pagination>.page{
+	display: inline-block;
+}
+.page>span{
+	width: 20px;
+    height: 3px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    background-color: #fff;
+    display: block;
+    margin: 5px 7px;
+    opacity: 0.3;
+
+}
+
+/* banner右侧 */
+.banner_fr{
+	width: 290px;
+	float: right;
+}
+.banner_fr>.item{
+	width: 290px;
+	height: 146px;
+	background-size: cover;
+	overflow: hidden;
+}
+.banner_fr>.item>a{
+	display: block;
+	width: 100%;
+}
+.banner_fr>.item>a>img{
+	width: 100%;
+}
+
+
+/* 1楼 */
+.product_list{
+	margin-left: -37px;
+	margin-bottom:30px;
+}
+.product_list>ul>li{
+	float: left;
+    width: 210px;
+    height: 300px;
+    margin-left: 37px;
+    margin-top: 30px;
+    transition: all .3s linear;
+}
+.product_list>ul>li.shadow{
+    box-shadow: 0 0 8px #dfdfdf;
+	/* box-shadow: 3px 5px 5px #eee; */
+}
+.product_list>ul>li.b_img{
+	float: left;
+    width: 457px;
+    height: 300px;
+    margin-left: 37px;
+    margin-top: 30px;
+}
+.product_list>ul>li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.product_list>ul>li .product_div{
+	width: 210px;
+	height: 210px;
+	overflow: hidden;
+}
+.product_list>ul>li.b_img .product_div{
+	width: 457px;
+	height: 300px;
+	overflow: hidden;
+}
+.product_list>ul>li .product_div img{
+	width: 100%;
+
+	transition: all .3s linear;
+}
+.product_list>ul>li .product_div img.scale{
+	transform: scale(1.2);
+}
+.product_list>ul>li>a>h6{
+	margin: 10px;
+    font-size: 1.4rem;
+    color: #393B3D;
+    line-height: 2.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 4.4rem;
+}
+.product_list>ul>li>a>.product_info{
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+}
+.product_list>ul>li>a>.product_info>.product_price{
+	font-size: 1.4rem;
+	color: #00AAEA;
+	margin-left: 10px;
+	float: left;
+}
+.product_list>ul>li>a>.product_info>.product_source{
+	font-size: 1.2rem;
+	color: #929292;
+	margin-right: 10px;
+	float: right;
+}
+
+/*楼层滚动*/
+.lift{
+	margin-top: 25px;
+	display: none;
+	position: fixed;
+	z-index: 100;
+	background-color: #918888;
+	left: 10px;
+	top: 100px;
+}
+.lift>ul{
+	display: block;
+	list-style: none;
+}
+.lift>ul>li.lift_item{
+	border-top: 1px solid #b1aaaa;
+	transition: background-color .1s;
+	transition: all .3s linear;
+}
+.lift>ul>li.lift_item.lift_item_on{
+	position: relative;
+	border-bottom: 1px solid #d70b1c;
+	margin-bottom: -1px;
+	border-color: #d70b1c;
+	background-color: #d70b1c;
+}
+.lift_btn{
+	overflow: hidden;
+	display: block;
+	width: 34px;
+	padding: 10px 5px;
+	line-height: 14px;
+	text-align: center;
+	color: #fefefe;
+	transition: color .1s;
+}
